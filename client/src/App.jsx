@@ -6,6 +6,7 @@ import MySessions from './pages/MySessions';
 import Editor from './pages/Editor';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './index.css';
 
 const PrivateRoute = ({ children }) => {
   return localStorage.getItem('token') ? children : <Navigate to="/login" />;
